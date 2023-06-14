@@ -107,4 +107,6 @@ likeButton.addEventListener('click',function(){
         imagemAtualLike = "../buttons/hearth.png"
     }
 
-})
+});
+
+
