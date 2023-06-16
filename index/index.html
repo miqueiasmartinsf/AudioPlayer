@@ -9,29 +9,58 @@
     <script src="../scripts/index.js" type="module" defer></script>
 </head>
 <body>
-    <div class="maincontainer">
-        <audio src="../audios/jovemD.mp3" id="audioplayer"></audio>
-        
-        <div class="albumimagecontainerdiv">
-            <div class="albumimagecontainer"></div>
+    <div class="menu">
+        <div class="menuimagesdiv">
+            <div id="homebutton"><img src="../menubuttons/home.png" alt=""></div>
+            <div id="musicplayerbutton"><img src="../menubuttons/nota.png" alt=""></div>
+            <div id="librarybutton"><img src="../menubuttons/library.png" alt=""></div>
         </div>
-        <div class="musicdescriptioncontainer">
-            <h1 id="musictitle"></h1>
-            <p id="musicdescription"></p>
+    </div>
+    <div class="screencontainer">
+        <div class="maincontainer">
+            <audio src="../audios/jovemD.mp3" id="audioplayer"></audio>
+            
+            <div class="albumimagecontainerdiv">
+                <div class="albumimagecontainer"></div>
+            </div>
+            <div class="musicdescriptioncontainer">
+                <h1 id="musictitle"></h1>
+                <p id="musicdescription"></p>
+            </div>
+            <div class="controllcontainer">
+                <div class="" id="shuffle"><img src="../buttons/shuffle.png" alt=""></div>
+                <div class="controllbuttons" id="prev"> <img src="../buttons/previous.png" alt=""></div>
+                <div class="controllbuttons" id="play"><img src="../buttons/play.png" alt="" id="playbuttonimg"></div>
+                <div class="controllbuttons" id="next"><img src="../buttons/next.png" alt=""></div>
+                <div class="" id="like"><img src="../buttons/hearth.png" alt=""></div>
+            </div>
         </div>
-        <div class="controllcontainer">
-            <div class="" id="shuffle"><img src="../buttons/shuffle.png" alt=""></div>
-            <div class="controllbuttons" id="prev"> <img src="../buttons/previous.png" alt=""></div>
-            <div class="controllbuttons" id="play"><img src="../buttons/play.png" alt="" id="playbuttonimg"></div>
-            <div class="controllbuttons" id="next"><img src="../buttons/next.png" alt=""></div>
-            <div class="" id="like"><img src="../buttons/hearth.png" alt=""></div>
 
+        <div class="libraycontainer">
+            <div class="playlistcontainer">
+                <div class="playlistscontainers">
+                    <div class="playlistimg"><img src="../library/playlistsound.png" alt=""></div>
+                    <div class="playlistname">
+                        <h1>Músicas Registradas</h1>
+                    </div>
+                    <div class="playlistbutton"></div>
+                </div>
+                <div class="playlistscontainers" id="musicascurtidas">
+                    <div class="playlistimg"><img src="../library/playlistsound.png" alt=""></div>
+                    <div class="playlistname">
+                        <h1>Músicas Curtidas</h1>
+                    </div>
+                    <div class="playlistbutton"></div>
+                </div>
+            </div>
+            <div class="musiclist">
+                <div class="backtolibrary">
+                    <button id="prevlibrary"><img src="../library/backarrow.png" alt=""></button>
+                </div>
+            </div>
         </div>
-
 
     </div>
-
-
     
 </body>
 </html>

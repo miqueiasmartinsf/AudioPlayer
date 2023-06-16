@@ -16,9 +16,10 @@ body{
     position: absolute;
     top: 50vh;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-45%);
     border-radius: 10px;
     padding: 50px 50px;
+    display: none;
 }
 
 .albumimagecontainerdiv{
@@ -43,13 +44,14 @@ body{
     margin-top: 30px;
     color: white;
     text-align: center;
+    
 }
 
 .controllcontainer{
     background-color: #173540;
     width: 100%;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 70px;
     border-radius: 80px;
     display: flex;
     justify-content: center;
@@ -97,6 +99,193 @@ body{
 #like img{
     width: 40px;
     height: 40px;
+}
+
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    background-color: #173540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.menuimagesdiv{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.menu img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+
+
+}
+
+.screencontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 22, 37);
+}
+
+.libraycontainer{
+    width: 800px;
+    height: 700px;
+    background-image: linear-gradient(0deg, #217373, #173540);
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    border-radius: 10px;
+    padding: 50px 50px;
+
+}
+
+.playlistscontainers{
+    width: 100%;
+    height: 70px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.playlistimg{
+    background-color: #217373;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+
+.playlistimg img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.playlistname{
+    height: 70px;
+    width: 500px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 14px;
+}
+
+.musiclist{
+    display: none;
+}
+
+.backtolibrary{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.backtolibrary button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-style: none;
+    cursor: pointer;
+}
+
+.backtolibrary img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    margin-bottom: 2px;
+    display: flex;
+}
+
+
+
+.music h1{
+    color: white;
+    font-size: 22px;
+}
+
+.musictitle{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+
+.nomeautor{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(164, 164, 164);
+    align-items: center;
+    align-content: center;
+}
+
+.playbuttonmusicdiv{
+    width: 80px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.plaubuttonmusic{
+    width: 50px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.plaubuttonmusic img{
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width:650px) {
@@ -170,12 +359,6 @@ body{
     }
 
 
-
-
-
-
-
-
     .albumimagecontainer{
         width: 300px;
         height: 300px;
@@ -200,6 +383,314 @@ body{
         text-align: center;
         font-size: 30px;
     }
+
+}
+
+
+@media (max-width:920px){
+    .libraycontainer{
+        width: 600px;
+        height: 550px;
+        background-image: linear-gradient(0deg, #217373, #173540);
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        padding: 50px 50px;
+    
+    }
+    
+    .playlistscontainers{
+        width: 100%;
+        height: 70px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    .playlistimg{
+        background-color: #217373;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    
+    }
+    
+    
+    .playlistimg img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+    .playlistname{
+        height: 70px;
+        width: 500px;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 14px;
+    }
+    
+    .musiclist{
+        display: none;
+    }
+    
+
+    
+    .backtolibrary{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .backtolibrary button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .backtolibrary img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .music{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border-bottom-style: solid;
+        border-width: 2px;
+        margin-bottom: 2px;
+        display: flex;
+    }
+    
+    
+    
+    .music h1{
+        color: white;
+        font-size: 22px;
+    }
+    
+    .musictitle{
+        width: 250px;
+        height: 50px;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    .nomeautor{
+        width: 300px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        color: rgb(164, 164, 164);
+        align-items: center;
+        align-content: center;
+    }
+    
+    .playbuttonmusicdiv{
+        width: 80px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .plaubuttonmusic{
+        width: 50px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    .plaubuttonmusic img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+}
+
+
+
+@media (max-width:650px){
+    .libraycontainer{
+        width: 250px;
+        height: 550px;
+        background-image: linear-gradient(0deg, #217373, #173540);
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        padding: 50px 50px;
+    
+    }
+    
+    .playlistscontainers{
+        width: 100%;
+        height: 70px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    .playlistimg{
+        background-color: #217373;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    
+    }
+    
+    
+    .playlistimg img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    
+    .playlistname{
+        height: 70px;
+        width: 500px;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 9px;
+    }
+    
+    .musiclist{
+        display: none;
+    }
+    
+
+    
+    .backtolibrary{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .backtolibrary button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-style: none;
+        cursor: pointer;
+    }
+    
+    .backtolibrary img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .music{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border-bottom-style: solid;
+        border-width: 2px;
+        margin-bottom: 2px;
+        display: flex;
+    }
+    
+    
+    
+    .music h1{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .musictitle{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    .nomeautor{
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        color: rgb(164, 164, 164);
+        align-items: center;
+        align-content: center;
+        font-size: 12px;
+    }
+    
+    .playbuttonmusicdiv{
+        width: 30px;
+        height: 30px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .plaubuttonmusic{
+        width: 50px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    
+    .plaubuttonmusic img{
+        width: 20px;
+        height: 20px;
+    }
+
 
 
 }
