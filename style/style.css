@@ -5,19 +5,14 @@
 }
 
 body{
-    position: relative;
     background-color: #292929;
 }
 
+
 .maincontainer{
-    width: 550px;
-    height: 700px;
+    width: 100vw;
+    height: 100%;
     background-image: linear-gradient(0deg, #217373, #173540);
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%,-45%);
-    border-radius: 10px;
     padding: 50px 50px;
     display: none;
 }
@@ -47,9 +42,18 @@ body{
     
 }
 
+
+.controllcontainerdiv{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .controllcontainer{
     background-color: #173540;
-    width: 100%;
+    width: 620px;
     height: 100px;
     margin-top: 70px;
     border-radius: 80px;
@@ -72,6 +76,13 @@ body{
 #shuffle img{
     width: 30px;
     height: 30px;
+}
+
+#play{
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 .controllbuttons{
@@ -105,12 +116,13 @@ body{
     width: 100%;
     height: 100px;
     background-color: black;
-    position: absolute;
     background-color: #173540;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
 
 }
 
@@ -137,23 +149,48 @@ body{
 }
 
 .screencontainer{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(22, 22, 37);
 }
+
+.mainscreencontainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
 
 .libraycontainer{
-    width: 800px;
-    height: 700px;
+    width: 100vw;
+    height: 90%;
     background-image: linear-gradient(0deg, #217373, #173540);
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%,-45%);
-    border-radius: 10px;
-    padding: 50px 50px;
+    padding: 50px 0px;
+    
 
 }
+
+.mainlibrarycontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.playlistcontainer{
+    width: 80%;
+    height: 100%;
+
+}
+
+
+
 
 .playlistscontainers{
     width: 100%;
@@ -196,14 +233,24 @@ body{
     font-size: 14px;
 }
 
-.musiclist{
+.musiclistcontainer{
     display: none;
+    width: 100%;
+    height: 100%;
 }
+
+.musiclist{
+    width: 100%;
+
+}
+
 
 .backtolibrary{
     width: 100%;
     height: 50px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .backtolibrary button{
@@ -289,16 +336,10 @@ body{
 }
 
 @media (max-width:650px) {
-
     .maincontainer{
-        width: 250px;
-        height: 550px;
+        width:  100vw;
+        height: 100%;
         background-image: linear-gradient(0deg, #217373, #173540);
-        position: absolute;
-        top: 50vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 10px;
         padding: 50px 50px;
     }
 
@@ -389,20 +430,24 @@ body{
 
 @media (max-width:920px){
     .libraycontainer{
-        width: 600px;
-        height: 550px;
+        width: 100vw;
+        height: 100%;
         background-image: linear-gradient(0deg, #217373, #173540);
-        position: absolute;
-        top: 50vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
         border-radius: 10px;
-        padding: 50px 50px;
+        padding: 50px;
     
     }
     
-    .playlistscontainers{
+    .mainlibrarycontainer{
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .playlistscontainers{
+        width: 90%;
         height: 70px;
         border-style: solid;
         border-width: 2px;
@@ -442,8 +487,8 @@ body{
         font-size: 14px;
     }
     
-    .musiclist{
-        display: none;
+    .musiclistcontainer{
+        width: 100%;
     }
     
 
@@ -544,20 +589,25 @@ body{
 
 @media (max-width:650px){
     .libraycontainer{
-        width: 250px;
-        height: 550px;
+        width: 100vw;
+        height: 100%;
         background-image: linear-gradient(0deg, #217373, #173540);
-        position: absolute;
-        top: 50vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
         border-radius: 10px;
-        padding: 50px 50px;
+        padding: 50px 0px;
+    
+    }
+
+    .mainlibrarycontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    
     
     }
     
     .playlistscontainers{
-        width: 100%;
+        width: 90%;
         height: 70px;
         border-style: solid;
         border-width: 2px;
@@ -597,7 +647,7 @@ body{
         font-size: 9px;
     }
     
-    .musiclist{
+    .musiclistcontainer{
         display: none;
     }
     
@@ -674,11 +724,10 @@ body{
         align-items: center;
         align-content: center;
     }
-    
-    .plaubuttonmusic{
+     
+    .playbuttonmusic{
         width: 50px;
         height: 50px;
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -686,9 +735,16 @@ body{
     }
     
     
-    .plaubuttonmusic img{
+    .playbuttonmusic img{
         width: 20px;
         height: 20px;
+    }
+
+    #play{
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
     }
 
 

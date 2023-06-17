@@ -298,7 +298,7 @@ let musicasCurtidasPlayList = document.getElementById('musicascurtidas');
 
 musicasCurtidasPlayList.addEventListener('click',function(){
     let playListContainer = document.querySelector('.playlistcontainer');
-    let musicListContainer = document.querySelector('.musiclist');
+    let musicListContainer = document.querySelector('.musiclistcontainer');
 
     playListContainer.style.display = 'none'
     musicListContainer.style.display = 'block'
@@ -309,7 +309,7 @@ let prevLibraryButton = document.getElementById('prevlibrary');
 
 prevLibraryButton.addEventListener('click',function(){
     let playListContainer = document.querySelector('.playlistcontainer');
-    let musicListContainer = document.querySelector('.musiclist');
+    let musicListContainer = document.querySelector('.musiclistcontainer');
     playListContainer.style.display = 'block'
     musicListContainer.style.display = 'none'
 
